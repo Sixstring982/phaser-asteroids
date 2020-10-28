@@ -1,5 +1,5 @@
 import * as Phaser from 'phaser';
-import Scenes from './scenes';
+import { allScenes } from './scenes/scenes';
 
 const gameConfig: Phaser.Types.Core.GameConfig = {
   title: 'Sample',
@@ -11,7 +11,7 @@ const gameConfig: Phaser.Types.Core.GameConfig = {
     height: window.innerHeight,
   },
 
-  scene: Scenes,
+  scene: allScenes,
 
   physics: {
     default: 'arcade',
